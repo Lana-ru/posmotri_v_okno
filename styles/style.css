@@ -51,14 +51,14 @@ ol {
 
 .content {
   inline-size: 1140px;
-  block-size: 534px;
+  /* block-size: 100%; */
   display: flex;
   align-items: flex-end;
   gap: 30px;
 }
 
 .result {
-  margin-bottom: 3px;
+  margin-bottom: 29px;
 }
 
 .result__video-container {
@@ -70,7 +70,9 @@ ol {
 
 .result__video {
   inline-size: 100%;
-  overflow: hidden;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
@@ -211,7 +213,6 @@ ol {
   display: block;
   text-decoration: none;
   color: #FFF;
-  overflow: hidden;
   margin: 2px;
 }
 
@@ -259,7 +260,7 @@ ol {
 
 .more-button {
   inline-size: 399px;
-  margin-bottom: 2px;
+  margin-bottom: 29px;
 }
 
 /* состояния */
