@@ -51,14 +51,13 @@ ol {
 
 .content {
   inline-size: 1140px;
-  /* block-size: 100%; */
   display: flex;
   align-items: flex-end;
   gap: 30px;
 }
 
 .result {
-  margin-bottom: 29px;
+  margin-bottom: 3px;
 }
 
 .result__video-container {
@@ -200,8 +199,8 @@ ol {
 }
 
 .content__list {
-  block-size: 324px;
-  overflow: hidden scroll;
+  block-size: 298px;
+  overflow: auto;
   position: relative;
 }
 
@@ -226,10 +225,11 @@ ol {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 2px 0;
 }
 
 .content__video-card-description-container {
-  inline-size: 100%;
+  inline-size: 200px;
 }
 
 .content__video-card-title {
@@ -239,7 +239,8 @@ ol {
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
@@ -250,17 +251,19 @@ ol {
   text-align: left;
   color: #FFFFFF;
   padding: 0 2px;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-thumbnail {
   inline-size: 194px;
-  min-height: 103px;
+  block-size: 103px;
   object-fit: cover;
+  object-position: center;
 }
 
 .more-button {
   inline-size: 399px;
-  margin-bottom: 29px;
+  margin-bottom: 2px;
 }
 
 /* состояния */
@@ -279,12 +282,17 @@ ol {
   text-underline-offset: 5px;
 }
 
+.search-form__label:active {
+  text-decoration: none;
+}
+
 .button:focus {
   outline: none;
 }
 
 .button:active {
   background-color: #545050;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -298,6 +306,7 @@ ol {
 
 .content__card-link:active {
   background-color: #545050;
+  text-decoration: none;
 }
 
 .content__card-link:hover {
